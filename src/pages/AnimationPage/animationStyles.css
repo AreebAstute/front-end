@@ -1,0 +1,395 @@
+
+:root {
+--base: #5E5690;
+--base-light: #7873A7;
+--base-dark: #555184;
+--shadow: #4F4C6B;
+--letter: #d8d7e5;
+}
+
+.mycontainer {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* background-color: papayawhip; */
+  }
+
+  .content-wrapper{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  .content {
+    position: relative;
+    perspective: 700px;
+    width: 20%;
+  }
+
+  .shadow {
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background: transparent;
+    border-radius: 30%;
+    box-shadow: 50px 100px 10px 5px #eeeef3;
+  }
+
+  .letter {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 280px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 15;
+    border-radius: 2px;
+    background: var(--letter);
+    box-shadow: 0px 1px 7px -2px var(--base);
+  }
+
+  .letter .body {
+    position: relative;
+    width: 240px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--base);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 10px 5px;
+}
+
+.letter .close {
+    position: absolute;
+    right: 10px;
+    top:  0;
+    font-size: 25px;
+    font-family: 'Manjari', sans-serif;
+    cursor: pointer;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+   } 
+
+.letter .message {
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+  }
+
+  .envelope {
+    position: relative;
+    width: 300px; 
+    height: 180px; 
+    background: linear-gradient(#cccbd7 0.5px, var(--base-light) 0.5px) ;
+    cursor: pointer;
+  }
+
+  .envelope::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;  
+    border-top: 115px solid #7873A7;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    box-sizing: border-box;
+    z-index: 30; 
+    transform-origin: top;
+  }
+
+  .envelope::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 300px; 
+    height: 180px; 
+    z-index: 25;
+    background: 
+      /* //bottom-right */
+      linear-gradient(30deg, var(--base-dark) 47%, var(--shadow) 50%, var(--base) 50%) 150px 90px/ 150px 90px no-repeat,
+      
+      /* //top-left */
+      linear-gradient(31deg, var(--base) 49%, var(--shadow) 50%, transparent 50%) 0px 0px/ 152px 90px no-repeat,
+      
+      /* //bottom-left */
+      linear-gradient(150deg, var(--base) 50%, var(--shadow) 50%, var(--base-dark) 53%) 0px 90px/ 151px 90px no-repeat,
+      
+      /* //top-right */
+      linear-gradient(148.7deg, transparent 50%, var(--shadow) 50%, var(--base) 51%) 150px 0px/ 150px 90px no-repeat; 
+  }
+
+  .textContainer{
+      padding: 10px;
+      margin: 10px 0;
+  }
+
+
+
+  /* bee styles */
+
+.helper__shift--right-1{
+  left: 10px;
+}
+.helper__shift--right-2{
+  left: 20px;
+}
+.helper__shift--right-3{
+  left: 30px;
+}
+.helper__shift--right-4{
+  left: 40px;
+}
+
+.bee {
+    /* animation: movement 10s linear infinite; */
+    position: absolute;
+    width: 100%;
+    top: 0;
+    /* left:25%; */
+    padding: 10px 0;
+    /* left: -80%; */
+    animation: flying 1s linear infinite alternate;
+}
+
+.bee__body {
+    position: relative;
+    /* animation: flying 1s linear infinite alternate; */
+}
+.bee__circle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.bee__circle--black {
+    background-color: #000000;
+  }
+
+.bee__circle--yellow {
+    background-color: #ec3838;
+  }
+
+.bee__face {
+    position: relative;
+    z-index: 3;
+}
+.bee__eyes {
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    top: 25%;
+    left: 25%;
+}
+
+.bee__eye {
+    display: inline-block;
+    background-color: white;
+    width: 13px;
+    height: 13px;
+    margin: 3px;
+    /* animation: blink 3s -2s linear infinite ; */
+    @apply rounded-full;
+    /* border-radius: 0 0 12px 12px; */
+}
+
+/* .bee__eye--right, .bee__eye--left {
+    animation: blink 3s -2s linear infinite ;
+} */
+
+.bee__mouth{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    width: 18px;
+    height: 13px;
+    @apply rounded-b-3xl border-t-0 border-b-2 border-white;
+}
+
+.bee__antennas {
+    position: relative;
+    width: 60px;
+    top: -25px;
+    text-align: center;
+    z-index: 2;
+}
+
+.bee__antenna {
+    display: inline-block;
+    width:10px;
+    height:30px;
+    border-radius: 20px 20px 0 0;
+    background-color:black;
+    margin: 5px;
+  }
+
+.bee__antenna--left {
+    transform: rotate(-20deg);
+    transform-origin: bottom left;
+    animation: waving-left 1s linear infinite;
+}
+
+.bee__antenna--right {
+    transform-origin: bottom right;
+    transform: rotate(20deg);
+    animation: waving-right 1s linear infinite;
+}
+
+.bee__wings {
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    /* width: 70px; */
+    z-index: 1;
+    /* transform: rotate(90deg); */
+    /* background-color: antiquewhite; */
+}
+
+.bee__wing {
+    border-radius: 100%;
+    display: inline-block;
+    width: 40px;
+    height: 60px;
+    background-color: #e9f7f0d5;
+    /* background-color: palevioletred; */
+}
+
+.bee__wing--left {
+    transform: rotate(147deg) skew(356deg, 10deg);
+    /* animation: flap 0.5s linear infinite alternate; */
+}
+.bee__wing--right {
+    transform: rotate(-147deg) skew(356deg, 10deg);
+    /* animation: flapRight 0.5s linear infinite alternate; */
+}
+.threadSvg{
+    opacity: 0;
+    z-index: 20;
+    /* animation: threadMovement 1s linear infinite alternate; */
+}
+
+
+@keyframes threadMovement {
+    0%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+    
+}
+@keyframes flying {
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+    
+}
+@keyframes blink {
+    0% {
+        height:13px;
+    }
+
+    95% {
+        height:13px;
+    }
+
+    100% {
+        height: 0;
+    }
+}
+@keyframes waving-left {
+    0% {
+        transform:rotate(-25deg);
+    }
+
+    50% {
+        transform:rotate(-10deg);
+    }
+
+    100% {
+        transform:rotate(-25deg);
+    }
+}
+
+
+@keyframes waving-right {
+    0% {
+        transform:rotate(25deg);
+    }
+
+    50% {
+        transform:rotate(10deg);
+    }
+
+    100% {
+        transform:rotate(25deg);
+    }
+}
+
+@keyframes flap {
+    0% {
+        transform: rotate(147deg);
+    }
+    /* 50%{
+        transform: skew(356deg, 16deg);
+    } */
+
+    100% {
+        transform: rotate(125deg);
+    }
+}
+@keyframes flapRight {
+    0% {
+        transform: rotate(-147deg);
+    }
+    /* 50%{
+        transform: skew(356deg, 16deg);
+    } */
+
+    100% {
+        transform: rotate(-125deg);
+    }
+}
+
+
+
+@keyframes movement {
+    0%{
+        left:0%;
+    }
+
+    50%,80% {
+        top: 25%;
+        left: 50%;
+    }
+
+    100%{
+        left:80%;
+    }
+}
+
+  /* bee styles */
+
+  /* wave styles */
+  
+  /* wave styles */

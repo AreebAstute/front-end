@@ -1,0 +1,28 @@
+
+
+  .bg-image-top{
+    border-radius:10px;
+  }
+
+  .bg-image-bottom{
+    border-radius:10px;
+  }
+
+  .button-position-seo{
+    bottom:-30px ;
+    left: 20%;
+    @apply text-white text-sm;
+  }
+
+  .card-multiple-bg{
+    background:url('../../../../images/bottom_pattern-webp.webp') right bottom  no-repeat,
+              url('../../../../images/top_pattern-webp.webp')  left top no-repeat;
+    background-size: 30%, 30%; 
+  }
+
+  .qa-type-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    opacity: 1; 
+    pointer-events: all;
+    @apply rounded-xl bg-white bg-no-repeat text-lg;
+  }

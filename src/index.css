@@ -1,0 +1,852 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Lato", sans-serif !important;
+  font-weight: 400;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* adding fonts below */
+/* @font-face {
+  font-family: "Lato", sans-serif;
+  src: url(./assets/fonts/Lato/Lato-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato", sans-serif;
+  src: url(./assets/fonts/Lato/Lato-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato", sans-serif;
+  src: url(./assets/fonts/Lato/Lato-Regular.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato", sans-serif;
+  src: url(./assets/fonts/Lato/Lato-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato", sans-serif;
+  src: url(./assets/fonts/Lato/Lato-Black.ttf) format("truetype");
+  font-weight: 800;
+  font-style: normal;
+} */
+
+/* //adding fonts above */
+
+/* //landing page below */
+.main_landing > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main_landing > img {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+@media (min-width: 1020px) {
+  .bg-chat-icon {
+    width: 427px;
+    height: 110%;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    /* right: 30%; */
+    /* top: 25%; */
+    /* border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px; */
+    border-top-right-radius: 46px;
+    border-bottom-right-radius: 46px;
+    --tw-bg-opacity: 1;
+    /* background-color: hsl(231 69% 60%); */
+    background-color: #fff;
+  }
+}
+
+.outlined_text {
+  color: white;
+  opacity: 0.1;
+  letter-spacing: 2px;
+  text-shadow: -1px -1px 0 #093953, 1px -1px 0 #093953, -1px 1px 0 #093953,
+    1px 1px 0 #093953;
+}
+
+.outlined_edisu_text {
+  color: white;
+  /* font-size: 12rem; */
+  opacity: 0.3;
+  letter-spacing: 4px;
+  text-shadow: -1px -1px 0 #BA3222, 1px -1px 0 #BA3222, -1px 1px 0 #BA3222,
+    1px 1px 0 #BA3222;
+}
+
+@supports (-webkit-text-stroke-width: 1px) {
+  .outlined_text {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #093953;
+    text-shadow: none;
+  }
+}
+
+/* 
+2.06px tracking-widest
+filter blur-md
+
+letter spacing 0.7px;: tracking-wider
+transform rotate-45
+
+object-scale-down
+
+h1 {
+	color: white;
+	font-family: sans-serif;
+	letter-spacing: 2px;
+	text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+@supports (-webkit-text-stroke-width: 1px) {
+	h1 {
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: black;
+		text-shadow: none;
+	}
+}
+
+.dot-img-right {
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    opacity: 0.35;
+} */
+
+/* //landing page above */
+
+.rightPatternSize,
+.leftPatternSize {
+  background-size: 8%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.videoOverlay {
+  position: relative;
+}
+.videoOverlay::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #161616;
+  opacity: 0.5;
+  @apply rounded-2xl;
+}
+
+.svgLineOne {
+  border: 1px solid green;
+}
+
+.svgLineOnest0 {
+  fill: none;
+  stroke: #68b445;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.svgLineOnest1 {
+  fill: none;
+  stroke: #68b445;
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 12.01, 20.01;
+}
+
+.hireAr {
+  box-shadow: -43px -2px 39px 21px rgba(199, 199, 199, 0.75) inset;
+  -webkit-box-shadow: -43px -2px 39px 21px rgba(199, 199, 199, 0.75) inset;
+  -moz-box-shadow: -43px -2px 39px 21px rgba(199, 199, 199, 0.75) inset;
+}
+.hireArText {
+  box-shadow: 68px -2px 39px 21px rgba(199, 199, 199, 0.75) inset;
+  -webkit-box-shadow: 68px -2px 39px 21px rgba(199, 199, 199, 0.75) inset;
+  -moz-box-shadow: 68px -2px 39px 21px rgba(199, 199, 199, 0.75) inset;
+}
+
+.heding1 {
+  @apply text-2xl md:text-3xl 2xl:text-4xl font-extrabold my-2 text-blue-primary;
+}
+.smallHeading {
+  @apply text-xl md:text-3xl 2xl:text-4xl font-medium text-blue-primary;
+}
+
+.contentListItem {
+  display: flex;
+  align-items: start;
+}
+
+.mutualSuccess {
+  background-image: url("./images/Succes-is-Our-Success-100-webp.webp");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: right;
+}
+.purposeNeeds {
+  background-image: url("./images/purpose-and-needs-bg-webp.webp");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: right;
+}
+.digitalTranDesc {
+  background-image: url("./images/Digital_Transformation_Services-bg-webp.webp");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: right;
+}
+.arAPP {
+  background-image: url("./images/coding-image-webp.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contentListItem img {
+  width: 15px;
+  height: 15px;
+  margin-right: 16px;
+  margin-top: 5px;
+}
+.contentListItem p {
+  font-weight: 400;
+  @apply text-base;
+}
+
+.contentListItem div {
+  @apply text-sm md:text-lg text-gray-text;
+}
+
+.metaverseSection {
+}
+
+/* multipl bg class */
+
+.multiple-bg {
+  background: url("images/background-pattern/right-pattern-webp.webp") right 0 top 0
+      no-repeat,
+    url("images/background-pattern/top-center-webp.webp") center top no-repeat,
+    url("images/background-pattern/leftt-pattern-webp.webp") left bottom no-repeat;
+  background-size: 22%, 35%, 25%;
+}
+.threed-services {
+  background: url("images/left_pattern-webp.webp") left 0 top 0 no-repeat,
+    url("images/3d-background-webp.webp") bottom no-repeat;
+  background-size: 8%, cover;
+}
+.game-services {
+  background: url("images/right_pattern-webp.webp") right 0 top 0 no-repeat,
+    url("images/game-back-webp.webp") bottom 0 left 0 no-repeat,
+    url("images/controls-webp.webp") bottom 0 right 0 no-repeat;
+  background-size: 8%, 80%, 22%;
+}
+.multiple-tech-bg {
+  background: 
+              /* url('images/background-pattern/right-pattern-webp.webp')  right 0 top 0 no-repeat, */ url("images/background-pattern/top-tech-pattern-webp.webp")
+      right top no-repeat,
+    url("images/background-pattern/leftt-pattern-webp.webp") left bottom no-repeat;
+  background-size: 30%, 40%;
+}
+.advantage-tech-bg {
+  background: 
+              /* url('images/background-pattern/right-pattern-webp.webp')  right 0 top 0 no-repeat, */ url("images/background-pattern/right_pattern-webp.webp")
+      right top no-repeat,
+    url("images/background-pattern/leftt-pattern-webp.webp") left bottom no-repeat;
+  background-size: 10%, 25%;
+}
+
+.postCard {
+  position: relative;
+}
+.postCard:hover .applyBtn {
+  display: flex;
+}
+
+/* multipl bg class */
+
+.social-link {
+  @apply transition text-lg xl:text-xl 2xl:text-2xl text-gray-dark hover:text-blue-primary;
+}
+.logo {
+  max-width: 270px;
+}
+.mobile-logo {
+  /* position: absolute; */
+  left: 0%;
+  transform: translateX(0%);
+}
+
+@media screen and (min-width: 1024px) {
+  .mobile-logo {
+    position: static;
+    left: 0;
+    transform: translateX(0);
+  }
+  .logo {
+    max-width: 250px;
+  }
+
+  .left-margn {
+    @apply ml-10;
+  }
+
+  .left-margn60 {
+    @apply ml-20;
+  }
+  .h1-text-size {
+    @apply text-4xl;
+  }
+}
+.footerServicesLink li {
+  @apply hover:underline;
+}
+
+/* menu btn */
+.menu-btn div:nth-child(1) {
+  top: 0%;
+  transform: translateY(0%) rotate(0);
+}
+.menu-btn div:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%) rotate(0);
+}
+.menu-btn div:nth-child(3) {
+  top: 100%;
+  transform: translateY(-100%) rotate(0);
+}
+.menu-btn-active div:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(225deg);
+}
+.menu-btn-active div:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%) rotate(225deg);
+}
+.menu-btn-active div:nth-child(3) {
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+}
+.sidebar {
+  /* width: 300px; */
+  @apply w-full md:w-2/4;
+  z-index: 100;
+}
+.nav-z {
+  z-index: 101;
+}
+.active_link:after {
+  content: "";
+  height: 3px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: -11px;
+  transform: translateY(50%);
+  background: #68b745;
+}
+
+.devProcessHeading {
+  @apply text-3xl 2xl:text-4xl font-extrabold mb-3;
+}
+/*------------------------------------------------------------------- LANDING PAGE STYLE */
+.paragraph-1 {
+  font-size: 1.125rem;
+  line-height: 1.77777;
+}
+
+.hero-banner__content-text {
+  padding-bottom: 2.625rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+.color-default {
+  color: #161616;
+}
+
+.color-primary {
+  color: #68b744;
+}
+
+.btn {
+  display: inline-flex;
+  align-content: center;
+  height: 2.875rem;
+  max-height: 2.875rem;
+  margin: 0.25rem 0.125rem;
+  padding: 0 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  border: 0.0625rem solid #68b744;
+  border-radius: 1.625rem;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.para {
+  display: flex;
+  flex-direction: row;
+  /* margin-left: 10px; */
+}
+
+.para::before {
+  display: block;
+  text-align: center;
+  font-size: 3em;
+  margin: 0px 15px 0px 0px;
+  color: #68b744;
+  content: "—";
+}
+
+.left-margn {
+  @apply ml-40;
+}
+
+.left-margn60 {
+  @apply ml-60;
+}
+
+.h1-text-size {
+  @apply text-5xl p-2 pl-20 pr-10;
+}
+
+.background-size {
+  @apply bg-90%;
+  @apply bg-right-top;
+}
+
+.bImage {
+  background-image: url("./images/baground-webp.webp");
+}
+
+.center-item {
+}
+
+.top-margin {
+  @apply mt-0;
+}
+
+/*------------------------------------------------------------------- LANDING PAGE STYLE END*/
+
+/* ----------------------------------------------------------------------LANGUAGE PAGE CSS */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 80%;
+  height: 100%;
+  border-radius: 10px;
+  @apply bg-white;
+}
+
+@media screen and (max-width: 560px) {
+  .card {
+    width: 90%;
+    height: 100%;
+  }
+}
+
+.card-transparent {
+  width: 100%;
+  height: 100%;
+}
+
+.card-small {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+  min-width: 100%;
+  border-radius: 10px;
+  @apply bg-white;
+}
+
+/* .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  border: 1px solid #68b744;
+} */
+
+.container {
+  padding: 2px 16px;
+}
+
+/* ----------------------------------------------------------------------LANGUAGE PAGE CSS END*/
+
+/* ------------------------------------------------------------------- Services PAGE CSS */
+
+/* ------------------------------------------------------------------- Services PAGE CSS */
+
+/* --------------------------------------------------------------------Screen MEDIA Queries Section  */
+
+@media screen and (max-width: 1250px) {
+  .left-margn {
+    @apply ml-32;
+  }
+
+  .left-margn60 {
+    @apply ml-52;
+  }
+
+  .background-size {
+    @apply bg-fixed-height;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .left-margn {
+    @apply ml-28;
+  }
+
+  .left-margn60 {
+    @apply ml-48;
+  }
+
+  .background-size {
+    @apply bg-fixed-height;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .left-margn {
+    @apply ml-24;
+  }
+
+  .left-margn60 {
+    @apply ml-44;
+  }
+
+  .background-size {
+    @apply bg-fixed-height;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .left-margn {
+    @apply ml-20;
+  }
+
+  .left-margn60 {
+    @apply ml-40;
+  }
+
+  .background-size {
+    @apply bg-fixed-height;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .left-margn {
+    @apply ml-10;
+  }
+
+  .left-margn60 {
+    @apply ml-28;
+  }
+  .h1-text-size {
+    @apply text-4xl;
+  }
+  .color-primary {
+    color: #68b744;
+  }
+  .background-size {
+    @apply bg-fixed-height;
+  }
+  .arAPP {
+    background-image: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .left-margn {
+    @apply ml-10;
+  }
+
+  .left-margn60 {
+    @apply ml-28;
+  }
+  .h1-text-size {
+    @apply text-4xl;
+  }
+
+  .background-size {
+    @apply bg-fixed-height;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .left-margn {
+    @apply ml-2;
+  }
+
+  .center-item {
+    @apply items-center;
+  }
+  .left-margn60 {
+    @apply ml-2;
+  }
+
+  .h1-text-size {
+    @apply text-2xl;
+  }
+
+  .para {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bImage {
+    background-image: url("./images/simple_image-webp.webp");
+  }
+  .threed-services {
+    background: url("images/left_pattern-webp.webp") left 0 top 0 no-repeat,
+      url("images/3d-background-webp.webp") bottom no-repeat;
+    background-size: 20%, cover;
+  }
+  .game-services {
+    background: url("images/right_pattern-webp.webp") right 0 top 0 no-repeat,
+      url("images/game-back-webp.webp") bottom 0 left 0 no-repeat,
+      url("images/controls-webp.webp") bottom 0 right 0 no-repeat;
+    background-size: 20%, 70%, 28%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mutualSuccess {
+    background-image: none;
+  }
+  .purposeNeeds {
+    background-image: none;
+  }
+  .digitalTranDesc {
+    background-image: none;
+  }
+  .multiple-tech-bg {
+    background-size: 50%, 50%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .top-margin {
+    margin-top: 70%;
+  }
+  .center-item {
+    @apply items-center;
+  }
+  .background-size {
+    @apply bg-contain;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .top-margin {
+    @apply mt-96;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .top-margin {
+    @apply mt-80;
+  }
+  .advantage-tech-bg {
+    background-size: 20%, 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .top-margin {
+    @apply mt-64;
+  }
+  .multiple-tech-bg {
+    background-size: 60%, 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .top-margin {
+    @apply mt-48;
+  }
+  .rightPatternSize,
+  .leftPatternSize {
+    background-size: 22%;
+  }
+  .multiple-bg {
+    background-size: 54%, 35%, 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .top-margin {
+    @apply mt-32;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .top-margin {
+    @apply mt-24;
+  }
+
+  .h1-text-size-about-us {
+    @apply text-4xl;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .top-margin {
+    @apply mt-16;
+  }
+  .rightPatternSize,
+  .leftPatternSize {
+    background-size: 16%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .top-margin {
+    @apply mt-14;
+    max-width: 360px;
+  }
+
+  .h1-text-size {
+    @apply text-2xl p-1 pl-5 pr-5;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .top-margin {
+    @apply mt-24;
+    max-width: 360px;
+  }
+
+  .h1-text-size {
+    @apply text-2xl p-1 pl-5 pr-5;
+  }
+}
+
+@media screen and (max-width: 362px) {
+  .top-margin {
+    @apply mt-20;
+    max-width: 360px;
+  }
+
+  .h1-text-size {
+    @apply text-2xl p-1 pl-5 pr-5;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .top-margin {
+    @apply mt-16;
+    max-width: 360px;
+  }
+
+  .h1-text-size {
+    @apply text-2xl p-1 pl-5 pr-5;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .top-margin {
+    @apply mt-24;
+    max-width: 360px;
+  }
+  .logo {
+    max-width: 200px;
+  }
+
+  .h1-text-size {
+    @apply text-2xl p-1 pl-5 pr-5;
+  }
+}
+
+/* metaverse-services page Our platforms & technologies section animation */
+
+.antiClockwiseSpin {
+  animation-duration: 27s;
+  animation-iteration-count: infinite;
+  animation-name: antiClockwiseSpin;
+  animation-timing-function: linear;
+}
+@keyframes antiClockwiseSpin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* metaverse-services page Our platforms & technologies section animation */
+
+/* metaverse-services page langing character */
+
+.landingCharacter {
+  animation: chracterAnimation 3s infinite;
+}
+
+@keyframes chracterAnimation {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* metaverse-services page langing character */
+
+@media screen and (max-width: 320) {
+  .consultancyCustomize {
+    top: "-39px";
+  }
+}
+@media screen and (max-width: 375px) {
+  .consultancyCustomize {
+    @apply -top-5;
+  }
+}
+@media screen and (max-width: 320px) {
+  .consultancyCustomize {
+    @apply -top-4;
+  }
+}
+@media screen and (max-width: 768px) {
+  .consultancyCustomize {
+    @apply -top-11;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .consultancyCustomize {
+    @apply -top-14;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .metverseLanding {
+    @apply pt-32;
+  }
+}

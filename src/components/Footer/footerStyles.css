@@ -1,0 +1,14 @@
+
+
+.footer-styles{
+    @apply bg-no-repeat bg-cover text-sm lg:text-base bg-center flex-shrink-0;
+}
+.footer{
+    background-image: url('../../images/footer_image-webp.webp');
+}
+
+@media screen and (max-width: 768px) {
+    .footer{
+        background-image: url('../../images/mobile-footer-image-webp.webp');
+    }
+}

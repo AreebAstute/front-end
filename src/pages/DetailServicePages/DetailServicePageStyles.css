@@ -1,0 +1,150 @@
+
+.main-heading{
+    @apply text-center lg:text-left text-2xl md:text-4xl xl:text-4xl 2xl:text-5xl leading-10 font-bold;
+
+}
+.sub-heading{
+    @apply text-blue-primary text-center lg:text-left text-2xl md:text-3xl xl:text-3xl leading-tight font-bold;
+}
+
+#stars{
+  animation: blink 1s linear 2s infinite alternate;;
+}
+
+@keyframes blink {
+  from{
+    opacity: 0.6;
+  }
+  to{
+    opacity: 1;
+  }
+}
+#couponImg{
+  
+  animation: move 2s linear infinite alternate;
+}
+@keyframes move {
+  from{
+    transform: translateY(10px);
+  }
+  to{
+    transform: translateY(20px);
+  }
+}
+
+.polygonAnimate{
+  opacity: 1;
+  animation: show 3s linear;
+  animation-delay: 3s;
+}
+
+@keyframes show {
+  from{
+    opacity:0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+
+.contentListItem{
+    display: flex;
+    align-items: baseline;
+
+}
+.contentListItem img{
+    width: 15px;
+    height: 15px;
+    margin-right: 18px;
+}
+.contentListItem p{
+    font-weight: 400;
+}
+
+.borderedDiv{
+  border: 20px solid transparent;
+  /* padding: 15px; */
+  border-image: url('../../images/why-choose-us-cart-design-webp.webp') 30 round;
+  border-image-repeat: stretch;
+}
+.devopServiceCard{
+  border: 40px solid transparent;
+  padding: 15px;
+  border-image: url('../../images/DevOps-Practice-give-you-cart-design-webp.webp') 30 round;
+  border-image-repeat:inherit;
+}
+.circleAnimation{
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.circleAnimation::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  top:0;
+  bottom:0;
+  right:0;
+  border-radius: 100%;
+  border-top-color: white;
+  border-right-color: white;
+  border-width: 3px;
+  border: 3px solid rgba(0.5 0.5 0.5 0.5);
+  animation: spinReverse 30s liner infinite;
+}
+
+.circularDiv{
+    position: relative;
+    animation: spin 30s linear infinite;
+}
+.circularDiv::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 100%;
+    border-top-color: #68b745;
+    border-right-color: #68b745;
+    border-width: 3px;
+    
+}
+.innerCircle{
+    animation: spinReverse 30s linear infinite;
+    width: 20rem;
+    height: 20rem;
+}
+.innerCircle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    border-radius: 100%;
+    border-top-color: #28363d;
+    border-right-color: #093953;
+    border-width: 3px;
+    
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinReverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

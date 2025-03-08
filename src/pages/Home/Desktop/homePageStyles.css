@@ -1,0 +1,218 @@
+
+/* .homeImage {
+    background-image:url('../../../images/rounded-corner-webp.webp');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+  } */
+
+  #circle {
+    fill: #68B745;
+  }
+  
+  #mySVG {
+
+    position: fixed;
+    top: 25%;
+    margin-top: 15%;
+    width: 100vw;
+    height: 100vh;
+    margin-left: -50px;
+  }
+
+  .imgAnimation{
+    position: absolute;
+    /* animation: imgAnimation 2s infinite linear; */
+    animation: imgAnimation 3s linear -2s infinite alternate;
+  }
+
+  @keyframes imgAnimation {
+    0%{
+      left:-20px;
+      bottom:-20px;
+    }
+    50%{
+      left:-30px;
+      bottom:-20px;
+    }
+    100%{
+      left:-40px;
+      bottom:-30px;
+    }
+  }
+
+  .st1{
+    fill:#68B744;
+  }
+
+  .svg{
+      @apply hidden xl:block;
+  }
+  
+/* .st2{
+    fill:none;
+    stroke:#68B745;
+    stroke-width:3;
+    stroke-miterlimit:10;
+} */
+
+#arrow{
+    position: absolute;
+    top:-350px;
+    right:-300px;
+    z-index: -1;
+    
+}
+#arrow2{
+    position: absolute;
+    top:-80%;
+    right: -2%;
+    z-index: -1;
+}
+#arrow3{
+    position: absolute;
+    top:0;
+    left:0;
+    /* left:3%; */
+    z-index: 1;
+}
+#arrow4{
+    position: absolute;
+    top: -643px;
+    left: 725px;
+    z-index: 4;
+    display:none;
+}
+#arrow5{
+    position: absolute;
+    top: -80px;
+    left: 0;
+    z-index: 4;
+}
+#arrow6{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
+  .dashed{
+    fill:none;
+    stroke:#68B745;
+    stroke-width: 2px;
+    
+    /* stroke-dasharray: 3773.508056640625; */
+    /* stroke-dashoffset: 3773.508056640625; */
+    /* stroke-dashoffset: 3773.508056640625; */
+    /* animation: dash 10s linear alternate infinite; */
+  }
+  .plain{
+    fill:none;
+    stroke-width: 2px;
+    stroke-dasharray: 10;
+    stroke:white;
+  }
+
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 3773.508056640625;
+
+    }
+    to {
+      stroke-dashoffset: 0;
+
+    }
+  }
+.path{
+    fill:none;
+    stroke:#68B545;
+    stroke-width:3;
+    stroke-miterlimit:10;
+
+    /* stroke-dasharray:12; */
+    /* stroke-dashoffset: 10; */
+
+}
+.polygon-style{fill:#68B545;}
+
+
+
+  .serviceDiv {
+      width:35%;
+  }
+  .serviceImgDiv {
+      width:30%;
+  }
+  .consultationDiv{
+      background-image: url('../../../images/waves-pattern-animation.gif');
+      background-position: top center;
+      background-repeat: repeat;
+  }
+  .innerDiv{
+    top:19%;
+  }
+  .aiIcon{
+    left:40%;
+    bottom:0; 
+    height: 100%;
+
+  }
+  .consultationInnerDiv{
+      width: 100%;
+      background-image: url('../../../images/AI\ Pattern-webp.webp');
+      background-position-y: bottom;
+      background-position-x: 90%;
+      background-repeat: no-repeat;
+      background-size: contain;
+  }
+
+@media screen and (max-width: 768px) {
+  
+  .aiIcon{
+    left:30%;
+  }
+}
+@media screen and (max-width: 680px) {
+  .consultationDiv{
+    align-items: center;
+    background: none;
+  }
+  .innerDiv{
+    top:22% 
+  }
+  .aiIcon{
+    left:35%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .aiIcon{
+    left:35%;
+    height: 60%;
+  }
+
+}
+
+@media screen and (max-width: 1020px) {
+    /* .homeImage{
+      background-image:url('../../../images/simple_image 2-webp.webp');
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    } */
+    .serviceDiv {
+      width:100%;
+    }
+    .serviceImgDiv {
+      width:100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  /* .homeImage{
+    background-image:url('../../../images/simple_image 2-webp.webp');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  } */
+}

@@ -1,0 +1,362 @@
+
+.whoWeAre-imageSection{
+@apply h-full w-full  md:w-4/6 lg:w-1/2 lg:mx-0 md:mx-auto items-center md:pt-28 md:p-10 p-5 ;
+}
+
+.WhoWeAre-textSection{
+   @apply h-full text-center md:text-left  w-1/2 bg-no-repeat bg-right-top ;
+}
+
+.textSectionStyle{
+   @apply flex flex-col md:p-10 pt-32  w-11/12  ;
+}
+
+.digitalization-imageSection{
+    @apply h-full  w-1/2 items-center  p-10 ;
+}
+.digitalization-textSection{
+    @apply h-full  w-1/2 bg-no-repeat bg-right-top text-center md:text-left;
+}
+.digitalization-inner-textSection{
+    @apply flex flex-col  p-5 md:p-10 pt-28  w-11/12;
+}
+
+.digitalization-stats-banner{
+    @apply h-40 flex flex-row justify-around items-center container text-center bg-no-repeat ;
+}
+.digitalization-banner-block-padding{
+    @apply pb-0 ;
+}
+
+
+
+.h1-text-size-about-us {
+    @apply text-5xl;
+  }
+  
+  .p-text-size-about-us {
+    @apply p-2 pl-10 pr-20 ;
+  }
+  
+  .text-div-width{
+    @apply w-5/12 ;
+  }
+  
+  .card-about-us {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 80%;
+    height: 100%;
+    border-radius: 15px;
+    @apply bg-font-secondary;
+  
+  }
+  
+  .card-section-2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.2s;
+    width: 70%;
+    height: 100%;
+    border-radius: 15px;
+    @apply bg-white;
+  
+  }
+
+  .card-section-3 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.2s;
+    width: 25%;
+    height: 100%;
+    border-radius: 15px;
+    @apply bg-white;
+  
+  }
+
+  .card-section-2:hover{
+    cursor: pointer;
+    -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  }
+  
+  .background-tint {
+    background-color: #68b744;
+  background-blend-mode: multiply;
+  border-radius: 15px;
+  background-position: center;
+  background-size: cover;
+  }
+  
+
+  
+  .numberCircle {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    background: #68b744;
+    color: white;
+    text-align: center;
+  
+    font: 32px Arial, sans-serif;
+  }
+  
+        /* progress-bar style */
+  .w3-light-grey{background-color:#093953!important}
+  .w3-round-xlarge{border-radius:16px}
+  .w3-container{padding: 6px; }
+  .w3-blue{background-color:#68b744!important; }
+  .w3-round-inner{
+    border-top-right-radius: 0px; 
+    border-bottom-right-radius: 0%;
+  }
+
+  .para-about-us {
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 10px; */
+  }
+  
+  /* .para-about-us::before {
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    margin: 0px 15px 0px 0px;
+    color: #68b744;
+    content: "—";
+  } */
+
+  .paragraph-1-about-us {
+    font-size: 1.125rem;
+    line-height: 1.77777;
+  }
+  
+  .hero-banner__content-text-about-us {
+    padding-bottom: 2.625rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  .btn-about-us {
+    display: inline-flex;
+    align-content: center;
+    height: 2.875rem;
+    max-height: 2.875rem;
+    margin: 0.25rem 0.125rem;
+    padding: 0 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    border: 0.0625rem solid #68b744;
+    border-radius: 1.625rem;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+
+  .paragraph-padding{
+      @apply pr-20;
+  }
+
+  .btn-container{
+    @apply flex  pl-10 pt-5;
+  }
+
+
+  .section3-parent-div{
+    @apply  bg-right-top bg-no-repeat bg-contain mb-20 ;
+}
+
+  .section3-text-div{
+      @apply h-full  w-1/2 bg-no-repeat bg-right-top ;
+  }
+  .section3-inner-text-div{
+      @apply flex flex-col  md:p-10 md:pt-36  w-11/12 text-center md:text-left ;
+  }
+
+  .section3-image-div{
+      @apply h-full  w-1/2 items-center  p-10 bg-no-repeat   flex flex-col justify-center ;
+  }
+
+  .bar-width{
+      @apply w-8/12;
+  }
+
+  .section3-image-inner-div{
+      @apply w-3/4 mt-20;
+  }
+
+  .section3-grid{
+      @apply w-11/12 pl-20 grid grid-cols-3 ;
+      margin-bottom:-5%;
+      z-index: 1;
+  }
+  
+
+
+
+  @media screen and (max-width: 1250px) {
+  
+    .section3-grid{
+        @apply w-11/12 pl-10 gap-y-1;
+    }
+    .card-section-2{
+        width: 80%;
+    }
+
+  }
+@media screen and (max-width: 1150px) {
+  
+    /*--------------------------- About-us PAge Style */
+  
+  
+    .h1-text-size-about-us {
+      @apply text-5xl p-2 pl-10 pr-5 ;
+    }
+    
+    .p-text-size-about-us {
+      @apply p-2 pl-10 pr-10 ;
+    }
+    
+    .text-div-width{
+      @apply w-6/12;
+    }
+
+    .card-section-2{
+        width: 90%;
+    }
+    /*--------------------------- About-us PAge Style */
+  
+  
+  
+  }
+
+@media screen and (max-width: 1024px) {
+    
+        
+        .WhoWeAre-textSection{
+           @apply h-1/2  w-full bg-no-repeat bg-right-top ;
+        }
+        
+        .textSectionStyle{
+           @apply flex flex-col p-5 md:p-10 md:pt-0  w-full  ;
+        }
+
+        .digitalization-imageSection{
+            @apply h-1/2  w-full items-center  p-0 px-20 ;
+        }
+        .digitalization-textSection{
+            @apply h-1/2  w-full ;
+        }
+
+        .digitalization-inner-textSection{
+            @apply flex flex-col md:p-10 pt-0  w-full;
+        }
+
+        .section3-text-div{
+            @apply h-1/2  w-full bg-no-repeat bg-right-top ;
+        }
+      
+        .section3-image-div{
+            @apply h-1/2  w-full items-center  px-10 md:px-20 bg-no-repeat   flex flex-col justify-center ;
+        }
+
+        .section3-parent-div{
+            @apply   my-20 h-full bg-cover  mb-10;
+        }
+        
+        .section3-inner-text-div{
+            @apply flex flex-col p-5 md:p-10 md:pt-10  w-full ;
+        }
+
+        .bar-width{
+            @apply w-full;
+        }
+
+        .section3-image-inner-div{
+            @apply w-full mt-0;
+        }
+
+        .section3-grid{
+            @apply w-11/12 pl-20 grid-cols-2 gap-y-8;
+        }
+        .card-section-2{
+            width: 80%;
+        }
+
+        
+  }
+
+@media screen and (max-width: 900px) {
+    /*--------------------------- About-us PAge Style */
+   
+   .text-div-width{
+     @apply w-4/6;
+   }
+ 
+   /*--------------------------- About-us PAge Style */
+}
+
+@media screen and (max-width: 830px) {
+    .digitalization-stats-banner{
+        @apply h-full py-10 flex flex-col justify-around items-center container text-center bg-no-repeat ;
+    }
+
+    .digitalization-banner-block-padding{
+      @apply pb-10;
+    }
+
+    .card-about-us {
+        width: 90%;
+      }
+
+      .section3-grid{
+        @apply w-11/12 pl-0  grid-cols-1 gap-y-8;
+    }
+    .card-section-2{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+   
+     /*--------------------------- About-us PAge Style */
+    
+     .text-div-width{
+      @apply w-full items-center;
+    }
+
+    .para-about-us{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-container{
+        @apply pl-0 ;
+      }
+  
+    .h1-text-size-about-us {
+      @apply text-4xl;
+      text-align: center;
+  
+    }
+    
+    .p-text-size-about-us {
+      text-align: center;
+    }
+  
+    /*--------------------------- About-us PAge Style */
+}
+ 
+
+@media screen and (max-width: 450px) {
+   
+   .paragraph-padding{
+       @apply pr-10;
+   }
+}
+
+@media screen and (max-width: 380px) {
+   
+    .paragraph-padding{
+        @apply pr-5;
+    }
+ }
+

@@ -1,0 +1,47 @@
+
+.form{
+    @apply my-10;
+}
+.inputTagStyle {
+    @apply border-2 rounded-full text-blue-primary  py-3 px-5 my-2 rounded-sm text-xs md:text-sm placeholder-blue-primary outline-none w-full;
+}
+.inputTag {
+    @apply border-2 py-2 my-2 px-2 w-full my-1 rounded-sm text-sm md:text-base;
+}
+
+.label{
+    @apply font-bold text-blue-primary text-lg mt-5 tracking-wide text-sm mb-2;
+}
+
+.radio-label{
+    @apply text-blue-primary ml-3 font-normal text-sm lg:text-base;
+}
+.radio-input{
+    @apply border-1 border-green-primary checked:bg-green-primary;
+
+}
+
+.error{
+    @apply text-red-600 font-light text-sm;
+}
+
+input[type='radio']:after {
+
+    content: '';
+    top: -5px;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    visibility: visible;
+    @apply border-1 border-green-primary relative inline-block rounded-full   ;
+}
+
+input[type='radio']:checked:after {
+    content: '';
+    top: -5px;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    visibility: visible;
+    @apply border-1 border-green-primary bg-green-primary relative inline-block rounded-full   ;
+}
