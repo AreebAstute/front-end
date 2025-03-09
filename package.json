@@ -4,12 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node ../server/server",
+    "dev": "node server/server",
     "build": "npm run build:client && npm run build:server && npm run serve",
     "build:client": "vite build --outDir dist/client",
     "build:server": "vite build --ssr src/entry-server.jsx --outDir dist/server",
     "generate": "vite build --outDir dist/static && npm run build:server && node prerender",
-    "serve": "cross-env NODE_ENV=production node ../server/server",
+    "serve": "cross-env NODE_ENV=production node server/server",
     "debug": "node --inspect-brk server"
   },
   "devDependencies": {
